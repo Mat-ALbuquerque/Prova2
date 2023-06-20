@@ -5,9 +5,9 @@
     $tipo = $_POST['tipo'];
     $valor = $_POST['valor'];
     $historico = $_POST['historico'];
-    $cheque = $_POST['chque'];
+    $cheque = $_POST['cheque'];
 
-    echo "<h1>Cadastro de Fluxo de caixa</h1>";
+    echo "<h3>Cadastro de Fluxo de caixa</h3>";
     echo "Data: $data <br>";
     echo "Tipo: $tipo <br>";
     echo "Valor: $valor <br>";
