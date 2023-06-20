@@ -24,3 +24,4 @@
     else    
         echo "Erro ao tentar cadastrar!";
 ?>
+<a href='Index.php'>Voltar</a>

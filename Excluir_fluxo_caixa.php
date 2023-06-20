@@ -1,12 +1,12 @@
 <?php
 include ('Conexao.php');
 
-    $id=$_GET['id'];
-    $sql="DELETE FROM fluxo_caixa WHERE id='".$id."'";
+    $id = $_GET['id'];
+    $sql = "DELETE FROM fluxo_caixa WHERE id=$id";
     $result = mysqli_query ($con, $sql);
     if ($result)
-        echo "Registro excluído com sucesso! <br> ";
+        echo "Registro excluído com sucesso!<br>";
     else 
-        echo "Erro ao tentar excluir registro no banco! <br>";
+        echo "Erro ao tentar excluir registro no banco! ".mysqli_error($con)."!";
 ?>
-<a href="Index.php">Voltar</a>
+<a href='Index.php'>Voltar</a>
