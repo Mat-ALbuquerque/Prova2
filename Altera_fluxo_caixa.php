@@ -24,7 +24,8 @@
         </div>
         <div>
             <label for="tipo">Tipo:</label>
-            <input type="text" name="tipo" id="tipo" value="<?php echo $row ['tipo']?>">
+            <input type="radio" name="tipo" id="tipo" value="entrada">Entrada</input>
+            <input type="radio" name="tipo" id="tipo" value="saida">Saída </input>
         </div>
         <div>
             <label for="valor">Valor:</label>
@@ -36,7 +37,9 @@
         </div>
         <div>
             <label for="cheque">Cheque:</label>
-            <input type="text" name="cheque" id="cheque" value="<?php echo $row ['cheque']?>">
+            <select name="cheque">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
         </div>
         <input type="submit" value="Enviar">
     </form>
